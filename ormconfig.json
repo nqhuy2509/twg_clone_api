@@ -1,0 +1,14 @@
+{
+    "type": "postgres",
+    "host": "localhost",
+    "port": 5432,
+    "username": "postgres",
+    "password": "123456",
+    "database": "clone_twg",
+    "entities": ["dist/**/*.entity{.ts,.js}"],
+    "migrations": ["src/migrations/*.ts", "dist/migrations/*{.ts,.js}"],
+    "cli": {
+        "migrationsDir": "src/migrations"
+    },
+    "synchronize": true
+}
